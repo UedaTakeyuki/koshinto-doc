@@ -1,0 +1,16 @@
+{
+  "name": "koshinto-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/UedaTakeyuki/koshinto-doc.git",
+  "author": "Takeyuki UEDA <ueda@latelierdueda.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^3.0.2",
+    "vuepress": "^1.8.0"
+  }
+}
