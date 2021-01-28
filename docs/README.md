@@ -19,7 +19,7 @@ posted: 2020-07-12
     <img src="pics/kagi_dimple_key.png" width="50%"/>
     <p>In addition to copy protection, koshinto also offers features such as:</p>
     <ul>
-      <li><p><strong>change permissions remotely</strong>: You can change permissions granted, remotely later. This mean you can suspend an execution permission at any time even if fraud is discovered later.</p></li>
+      <li><p><strong>change permissions remotely</strong>: The permishion you have granted can be changed remotely later. This mean you can suspend an execution permission at any time even if fraud is discovered later.</p></li>
       <li><p><strong>safekeeping of key</strong>: You can pass a string after the permissions confirmation. This means you can store the keys or credentials used by your application in a secure location isolated by network from tamperling.</p></li>
     </ul>
     <p><a href="guide/">getting started guide</a></p>
