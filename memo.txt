@@ -1,0 +1,8 @@
+# 2020.02.10 How to make "back to App" link
+
+1. At isExternal in util/index.js, recognize "/" as isExternal.
+2. At <template> in  theme/components/NavLink.vue, add <a> for AppTop.
+3. Add function isAppTop to theme/components/NavLink.vue.
+
+# 2020.07.12 How can I use markdown in the Homepage layout of the VuePress?
+https://stackoverflow.com/questions/60880191/how-can-i-use-markdown-in-the-homepage-layout-of-the-vuepress
