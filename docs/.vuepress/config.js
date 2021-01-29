@@ -118,7 +118,7 @@ module.exports = {
           { text: 'User Forum', link: 'https://groups.google.com/g/koshinto_sansi'},
         ]
       },
-      { text: 'back to App', link: '/'},
+      { text: 'back to App', link: 'https://koshinto.uedasoft.com'},
     ]
   }
 }

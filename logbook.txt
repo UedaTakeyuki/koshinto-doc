@@ -1,1 +1,2 @@
-2021.01.28 separated from koshinto rep.
+2021.01.28 separated from koshinto rep, fix: link to app
+2021.01.29 safekeeping key
