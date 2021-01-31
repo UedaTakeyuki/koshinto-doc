@@ -22,10 +22,14 @@ void version();
 /**
  * @fn
  * Confirmation of execution authority.
- * @brief 要約説明
- * @param (引数名) 引数の説明
- * @param (引数名) 引数の説明
- * @return 戻り値の説明
+ * @brief Confirmation of execution authority.
+ * @param (substitutebid) A BindID used on behalf of the original BindID of sansi. This BindID should be owned by the same owner of it that the same user who owns the original BindID.
+ * @param (secretstring) Any string of up to 128 characters passed to koshinto as part of keys. If a string of 128 characters or more is specified, the previous 128 characters are passed.
+ * @param (safekeepedkey) A pointer to the area that receives the safekeepedkey string returned by koshinto upon successful authentication.
+ * @return ng_confirmed:   confirm ng.
+           ok_confirmed:   confirm ok.
+           error_network:  network error
+           error_internal: service internal error
  * @sa 参照すべき関数を書けばリンクが貼れる
  * @detail 詳細な説明
  */
