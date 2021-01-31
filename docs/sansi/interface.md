@@ -1,5 +1,12 @@
 # Interface of Sansi
 
+int confirm(char *substitutebid, char *secretstring, char *safekeepedkey)  
+
+## return
+
+- ng_confirmed: The result of confirm is **NG**. Your application should be exited because it is execution in an unintended environment.
+
+
 ```c:
 /**
 * Header file for sansi
