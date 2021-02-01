@@ -1,11 +1,18 @@
-# Interface of Sansi
+# C API of Sansi
 
-int confirm(char *substitutebid, char *secretstring, char *safekeepedkey)  
+int ``confirm``(char *substitutebid, char *secretstring, char *safekeepedkey)  
 
 ## return
 
-- ng_confirmed: The result of confirm is **NG**. Your application should be exited because it is execution in an unintended environment.
+- ng_confirmed: The result of confirm is **NG**. Your application should be exited because this is execution on an unintended environment.
+- ok_confirmed: The result of confirm is **NG**. Your application can execute because this is execution on an intended environment.
+- error_network: The message from koshinto was a timeout. There is no way to know whether on the intentional environment or not, so it depends on the nature of the application whether it is considered a mere accident and generously allowed to execute, or it is considered an intentional network blockage and refused to execute.
+- error_internal: Internal error of sansi or koshinto. 
+I would appreciate it if you could send me an issue report.
 
+## params
+
+### substitutebid
 
 ```c:
 /**

@@ -19,9 +19,12 @@ The sansi neither doesn't use license file nor license key which is confusing, p
 You don't have to do the hassle of issuing a license file, just provide your application with sansi embedded.
 <!--ライセンスファイルを発行する手間をかける必要はありません。アプリケーションにsansiを埋め込んで提供するだけです。-->
 
+
 ## Features table
 Features tables are available at [here](/features/).
 
 ## Getting Started
 Refer [getting-started](/guide/getting-started/signup).
 
+## API
+Refer [API](./interface).
