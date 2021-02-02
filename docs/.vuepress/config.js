@@ -107,7 +107,8 @@ module.exports = {
             text: 'Miscellaneous ',
             items: [
               { text: 'Glossary', link: '/glossary'},
-              { text: 'Origin of the name', link: '/origin/'}
+              { text: 'Origin of the name', link: '/origin/'},
+              { text: 'github rep of this site', link: 'https://github.com/UedaTakeyuki/koshinto-doc'}
             ]
           },
         ]
