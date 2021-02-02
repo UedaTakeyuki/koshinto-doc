@@ -2,7 +2,7 @@
 
 int ``confirm``(char *substitutebid, char *secretstring, char *safekeepedkey)  
 
-## return
+## return value
 
 - ng_confirmed: The result of confirm is **NG**. Your application should be exited because this is execution on an unintended environment.
 - ok_confirmed: The result of confirm is **NG**. Your application can execute because this is execution on an intended environment.
@@ -11,8 +11,36 @@ int ``confirm``(char *substitutebid, char *secretstring, char *safekeepedkey)
 I would appreciate it if you could send me an issue report.
 
 ## params
+If you just want to check the validity of the execution environment, set all parameters to NULL.
 
-### substitutebid
+```c
+  if (ok_confirmed == confirm(NULL, NULL, NULL)){printf("OK\n");}
+```
+
+confirm has three parameters that are effective in a particular situation, as follows:
+
+### 1. substitutebid
+A BindID used on behalf of the original BindID of sansi. This BindID should be owned by the same owner of it that the same user who owns the original BindID.
+
+### 2. secretstring
+Any string of up to 128 characters passed to koshinto as part of keys. If a string of 128 characters or more is specified, the previous 128 characters are passed.
+
+### 3. safekeepedkey
+A pointer to the area that receives the safekeepedkey string returned by koshinto upon successful authentication.  
+See [here](/docs/users-manual/binds/safekeeping) for how to set a safekeepedkey on the koshinto.
+
+Following is a sample code of how to get safekeeped key:
+
+```c:
+main(){
+  #include "sansi.h"
+
+  char safekeepkey[129]; 
+  if (ok_confirmed == confirm(NULL, NULL, safekeepkey)){
+    printf("%s",safekeepkey);
+  }
+}
+```
 
 ## header file
 ```c:
@@ -45,8 +73,6 @@ void version();
            ok_confirmed:   confirm ok.
            error_network:  network error
            error_internal: service internal error
- * @sa 参照すべき関数を書けばリンクが貼れる
- * @detail 詳細な説明
  */
 int confirm(char *substitutebid, char *secretstring, char *safekeepedkey);
 

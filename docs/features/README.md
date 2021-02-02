@@ -46,7 +46,7 @@ You can use the following keys to restrict the launch of the application.
 </dl>
 
 ### Safekeeping Key
-You can save up to 32 alphanumeric characters in koshinto and pass it to the application at application startup through confirm () function. 
+You can save up to 128 alphanumeric characters in koshinto and pass it to the application at application startup through confirm () function. 
 
 |                      |Linux|Mac|Raspberry Pi|
 |----------------------|:---:|:-:|:----------:|
