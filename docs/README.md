@@ -44,6 +44,7 @@ posted: 2020-07-12
 
 ## What's new
 
+- 2021.03.18 Fix the purchase bind problem.
 - 2021.01.10 sansi library updated to v1.3. The size of Safekeeped Key is expanded from 32 characters to 128 characters.
 - 2020.12.22 sansi library updated to v1.2.
 - 2020.12.13 New document [How to limit the running of your Raspberry Pi Application to only from a specific Raspberry Pi Board](howto/20201213)
